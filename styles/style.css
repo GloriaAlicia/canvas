@@ -1,0 +1,80 @@
+:root{
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    --principalcolor: aquamarine;
+    --acento: blue;
+}
+/*****************menu*******************/
+nav{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: inline-flex;
+    padding: 1.5vw;
+}
+nav ul li a{
+    padding: 0 0.5vw;
+    color: var(--acento);
+}
+li a{
+    font-weight: bold;
+}
+.save{
+    background-color: black;
+    color: #ffffff;
+    padding: 1vw;
+}
+/************************main page**/
+.container{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/********************************pinceles y opciones****/
+.select{
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    padding: 2vw;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow:  -14px 14px 43px #e0e0e0,
+    14px -14px 43px #ffffff4d;
+}
+/* .size input{
+    transform-origin: 50% 90%;
+    transform: rotateZ(-90deg);
+} */
+input[type="radio"]{
+    display: none;
+}
+#colorElegido{
+    background-color: transparent;
+}
+.drawS{
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--acento);
+}
+/********************************fondo de botones, no usado*************************************************+****/
+.back-button{
+    background-color: var(--acento);
+}
+/******************canvas*/
+canvas{
+    border: solid 1px black;
+}
+.canva{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+@media screen and (max-width:400px) {
+    
+}

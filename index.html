@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>principal</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dibujar</a></li>
+            <li><a href="./subpages/juego.html">Jugar</a></li>
+        </ul>
+        <ul>
+            <li><a href="#" class="save">pendiente
+                <i class="fa-solid fa-angle-right"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section class="canva">
+            <h1>Canva para dibujar</h1>
+            <canvas></canvas>
+        </section>
+        <section class="select">
+            <div class="pincelSquare">
+                <input type="radio" id="drawS" name="pen-type">
+                <label for="drawS">
+                    <i class="fa-solid fa-square-full"></i>
+                </label>
+            </div>
+
+            <div class="pincelCircle">
+                <input type="radio" id="drawC" name="pen-type">
+                <label for="drawC">
+                    <i class="fa-solid fa-circle"></i>
+                </label>
+            </div>
+
+            <input type="color" id="colorElegido">
+            <div class="size">
+                <input type="range" id="radio" value="5" max="200">
+            </div>
+            <button id="delete">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </section>
+    </main>
+    <script src="./javascript/canva.js"></script>
+</body>
+</html>
